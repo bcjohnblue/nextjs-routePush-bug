@@ -2,12 +2,12 @@ import React from 'react'
 
 const Article = () => {
   return (
-    <p>Article page (by param)</p>
+    <p>This page will trigger server-side rendering</p>
   )
 }
 
 Article.getInitialProps = async (props) => {
-  console.log(props);
+  console.log('Article [id] page getInitialProps');
   return {}
 }
 
